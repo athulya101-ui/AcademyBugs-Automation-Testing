@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Academy Bugs Cart Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Shopping Cart Tests(failed)">
+    <classes>
+      <class name="tests.CartTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyCurrencySelectorUpdatesCartAmounts"/>
+          <include name="verifyProductSearchFromCartPage"/>
+          <include name="verifyContinueShopping"/>
+          <include name="tearDown"/>
+          <include name="verifyFirstPriceFilterFunctionality"/>
+          <include name="verifyEmptyCartMessageAfterRemovingProduct"/>
+          <include name="verifyFilterByPriceDisplayed"/>
+          <include name="initializeCartPage"/>
+          <include name="verifyInvalidCouponCodeIsRejected"/>
+          <include name="verifyValidGiftCardRedemption"/>
+          <include name="verifyStoreMenuDisplayed"/>
+          <include name="verifyGrandTotalCalculation"/>
+          <include name="verifyCreateAccountWithBlankFields"/>
+          <include name="verifyCartDoesNotDisplayUnwantedSymbols"/>
+          <include name="verifyCreateAccountWithValidData"/>
+          <include name="verifyHotItemFunctionality"/>
+          <include name="verifyCreateAccountControlsDisplayed"/>
+          <include name="verifyAllItemsStoreMenuOption"/>
+        </methods>
+      </class> <!-- tests.CartTest -->
+    </classes>
+  </test> <!-- Shopping Cart Tests(failed) -->
+</suite> <!-- Failed suite [Academy Bugs Cart Test Suite] -->

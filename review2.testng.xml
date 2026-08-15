@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="tests.ExamplesOfBugsTest"/>
+      <class name="tests.PageFunctionalTest"/>
+      <class name="base.BaseTest"/>
+      <class name="tests.FindBugsTest"/>
+      <class name="academybugs.com.AcademyBugs.AppTest"/>
+      <class name="tests.TypesOfBugsTest"/>
+      <class name="tests.CommonFeaturesTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,1151 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>53/18/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Aug 15 12:43:07 CEST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>531 seconds (531016 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.CartTest.verifyInvalidCouponCodeIsRejected()'><b>verifyInvalidCouponCodeIsRejected</b><br>Test class: tests.CartTest<br>Test method: TC-CART-018</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method areCouponControlsDisplayed() is undefined for the type CartPage
+	The method applyCoupon(String) is undefined for the type CartPage
+	The method getDisplayedMessage() is undefined for the type CartPage
+
+	at tests.CartTest.verifyInvalidCouponCodeIsRejected(CartTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace530681735", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace530681735'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method areCouponControlsDisplayed() is undefined for the type CartPage
+	The method applyCoupon(String) is undefined for the type CartPage
+	The method getDisplayedMessage() is undefined for the type CartPage
+
+	at tests.CartTest.verifyInvalidCouponCodeIsRejected(CartTest.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyCurrencySelectorUpdatesCartAmounts()'><b>verifyCurrencySelectorUpdatesCartAmounts</b><br>Test class: tests.CartTest<br>Test method: TC-CART-022 and TC-CART-043</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method isCurrencyDropdownDisplayed() is undefined for the type CartPage
+	The method selectCurrency(String) is undefined for the type CartPage
+	The method getSelectedCurrency() is undefined for the type CartPage
+
+	at tests.CartTest.verifyCurrencySelectorUpdatesCartAmounts(CartTest.java:70)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace78646617", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace78646617'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method isCurrencyDropdownDisplayed() is undefined for the type CartPage
+	The method selectCurrency(String) is undefined for the type CartPage
+	The method getSelectedCurrency() is undefined for the type CartPage
+
+	at tests.CartTest.verifyCurrencySelectorUpdatesCartAmounts(CartTest.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CheckoutDataDrivenTest.checkoutUsingExcel()'><b>checkoutUsingExcel</b><br>Test class: tests.CheckoutDataDrivenTest</td>
+<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void tests.CheckoutDataDrivenTest.checkoutUsingExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkoutUsingExcel([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7, java.lang.String arg8, java.lang.String arg9])
+Arguments: [(java.util.LinkedHashMap) {TestCaseID=TC-CHECKOUT-001, Country=Austria, FirstName=Athulya, LastName=Sasi, CompanyName=, Address=st veit, City=St. Veit, State=, ZipCode=30001, Phone=1234567890}]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace918716909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace918716909'><pre>org.testng.internal.reflect.MethodMatcherException: 
+[public void tests.CheckoutDataDrivenTest.checkoutUsingExcel(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: checkoutUsingExcel([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4, java.lang.String arg5, java.lang.String arg6, java.lang.String arg7, java.lang.String arg8, java.lang.String arg9])
+Arguments: [(java.util.LinkedHashMap) {TestCaseID=TC-CHECKOUT-001, Country=Austria, FirstName=Athulya, LastName=Sasi, CompanyName=, Address=st veit, City=St. Veit, State=, ZipCode=30001, Phone=1234567890}]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>tests.CheckoutDataDrivenTest@687e99d8</td></tr>
+<tr>
+<td title='tests.CartTest.verifyStoreMenuDisplayed()'><b>verifyStoreMenuDisplayed</b><br>Test class: tests.CartTest</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method isStoreMenuDisplayed() is undefined for the type CartPage
+	The method getStoreMenuLinkCount() is undefined for the type CartPage
+
+	at tests.CartTest.verifyStoreMenuDisplayed(CartTest.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1475453406", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1475453406'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method isStoreMenuDisplayed() is undefined for the type CartPage
+	The method getStoreMenuLinkCount() is undefined for the type CartPage
+
+	at tests.CartTest.verifyStoreMenuDisplayed(CartTest.java:105)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyFilterByPriceDisplayed()'><b>verifyFilterByPriceDisplayed</b><br>Test class: tests.CartTest</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method isFilterByPriceDisplayed() is undefined for the type CartPage
+	The method getPriceFilterCount() is undefined for the type CartPage
+
+	at tests.CartTest.verifyFilterByPriceDisplayed(CartTest.java:119)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace570408974", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace570408974'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method isFilterByPriceDisplayed() is undefined for the type CartPage
+	The method getPriceFilterCount() is undefined for the type CartPage
+
+	at tests.CartTest.verifyFilterByPriceDisplayed(CartTest.java:119)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyFirstPriceFilterFunctionality()'><b>verifyFirstPriceFilterFunctionality</b><br>Test class: tests.CartTest</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method clickFirstPriceFilter() is undefined for the type CartPage
+
+	at tests.CartTest.verifyFirstPriceFilterFunctionality(CartTest.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace315068214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace315068214'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method clickFirstPriceFilter() is undefined for the type CartPage
+
+	at tests.CartTest.verifyFirstPriceFilterFunctionality(CartTest.java:126)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyCreateAccountWithValidData()'><b>verifyCreateAccountWithValidData</b><br>Test class: tests.CartTest</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method areCreateAccountControlsDisplayed() is undefined for the type CartPage
+	The method createAccount(String, String) is undefined for the type CartPage
+	The method getAccountResponse() is undefined for the type CartPage
+
+	at tests.CartTest.verifyCreateAccountWithValidData(CartTest.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1391983205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1391983205'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method areCreateAccountControlsDisplayed() is undefined for the type CartPage
+	The method createAccount(String, String) is undefined for the type CartPage
+	The method getAccountResponse() is undefined for the type CartPage
+
+	at tests.CartTest.verifyCreateAccountWithValidData(CartTest.java:138)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyGrandTotalCalculation()'><b>verifyGrandTotalCalculation</b><br>Test class: tests.CartTest<br>Test method: TC-CART-012</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+
+	at tests.CartTest.verifyGrandTotalCalculation(CartTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1563607495", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1563607495'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+
+	at tests.CartTest.verifyGrandTotalCalculation(CartTest.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyValidGiftCardRedemption()'><b>verifyValidGiftCardRedemption</b><br>Test class: tests.CartTest<br>Test method: TC-CART-020</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method areGiftCardControlsDisplayed() is undefined for the type CartPage
+	The method redeemGiftCard(String) is undefined for the type CartPage
+
+	at tests.CartTest.verifyValidGiftCardRedemption(CartTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1557602018", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1557602018'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method areGiftCardControlsDisplayed() is undefined for the type CartPage
+	The method redeemGiftCard(String) is undefined for the type CartPage
+
+	at tests.CartTest.verifyValidGiftCardRedemption(CartTest.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyHotItemFunctionality()'><b>verifyHotItemFunctionality</b><br>Test class: tests.CartTest<br>Test method: TC-CART-024</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method isHotItemDisplayed() is undefined for the type CartPage
+	The method getHotItemName() is undefined for the type CartPage
+	The method clickHotItem() is undefined for the type CartPage
+
+	at tests.CartTest.verifyHotItemFunctionality(CartTest.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1811235424", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1811235424'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method isHotItemDisplayed() is undefined for the type CartPage
+	The method getHotItemName() is undefined for the type CartPage
+	The method clickHotItem() is undefined for the type CartPage
+
+	at tests.CartTest.verifyHotItemFunctionality(CartTest.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyCreateAccountControlsDisplayed()'><b>verifyCreateAccountControlsDisplayed</b><br>Test class: tests.CartTest</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method areCreateAccountControlsDisplayed() is undefined for the type CartPage
+
+	at tests.CartTest.verifyCreateAccountControlsDisplayed(CartTest.java:132)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace840027268", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace840027268'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method areCreateAccountControlsDisplayed() is undefined for the type CartPage
+
+	at tests.CartTest.verifyCreateAccountControlsDisplayed(CartTest.java:132)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyProductQuantityCanBeUpdatedBeyondTwo()'><b>verifyProductQuantityCanBeUpdatedBeyondTwo</b><br>Test class: tests.CartTest<br>Test method: TC-CART-005</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+
+	at tests.CartTest.verifyProductQuantityCanBeUpdatedBeyondTwo(CartTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace282658241", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace282658241'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+
+	at tests.CartTest.verifyProductQuantityCanBeUpdatedBeyondTwo(CartTest.java:22)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyCartDoesNotDisplayUnwantedSymbols()'><b>verifyCartDoesNotDisplayUnwantedSymbols</b><br>Test class: tests.CartTest</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method pageContainsUnwantedSymbols() is undefined for the type CartPage
+
+	at tests.CartTest.verifyCartDoesNotDisplayUnwantedSymbols(CartTest.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1553686114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1553686114'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method pageContainsUnwantedSymbols() is undefined for the type CartPage
+
+	at tests.CartTest.verifyCartDoesNotDisplayUnwantedSymbols(CartTest.java:82)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyEmptyCartMessageAfterRemovingProduct()'><b>verifyEmptyCartMessageAfterRemovingProduct</b><br>Test class: tests.CartTest<br>Test method: TC-CART-013 and TC-CART-014</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method attemptToRemoveFirstProduct() is undefined for the type CartPage
+	The method isEmptyCartDisplayed() is undefined for the type CartPage
+
+	at tests.CartTest.verifyEmptyCartMessageAfterRemovingProduct(CartTest.java:36)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace608486367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace608486367'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method attemptToRemoveFirstProduct() is undefined for the type CartPage
+	The method isEmptyCartDisplayed() is undefined for the type CartPage
+
+	at tests.CartTest.verifyEmptyCartMessageAfterRemovingProduct(CartTest.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyContinueShopping()'><b>verifyContinueShopping</b><br>Test class: tests.CartTest<br>Test method: TC-CART-016</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method clickContinueShopping() is undefined for the type CartPage
+
+	at tests.CartTest.verifyContinueShopping(CartTest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace107279519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace107279519'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method clickContinueShopping() is undefined for the type CartPage
+
+	at tests.CartTest.verifyContinueShopping(CartTest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyCreateAccountWithBlankFields()'><b>verifyCreateAccountWithBlankFields</b><br>Test class: tests.CartTest</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method areCreateAccountControlsDisplayed() is undefined for the type CartPage
+	The method createAccount(String, String) is undefined for the type CartPage
+	The method getAccountResponse() is undefined for the type CartPage
+
+	at tests.CartTest.verifyCreateAccountWithBlankFields(CartTest.java:147)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace607192333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace607192333'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method areCreateAccountControlsDisplayed() is undefined for the type CartPage
+	The method createAccount(String, String) is undefined for the type CartPage
+	The method getAccountResponse() is undefined for the type CartPage
+
+	at tests.CartTest.verifyCreateAccountWithBlankFields(CartTest.java:147)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyAllItemsStoreMenuOption()'><b>verifyAllItemsStoreMenuOption</b><br>Test class: tests.CartTest</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method clickStoreMenuOption(String) is undefined for the type CartPage
+
+	at tests.CartTest.verifyAllItemsStoreMenuOption(CartTest.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace95884778", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace95884778'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method clickStoreMenuOption(String) is undefined for the type CartPage
+
+	at tests.CartTest.verifyAllItemsStoreMenuOption(CartTest.java:112)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+<tr>
+<td title='tests.CartTest.verifyProductSearchFromCartPage()'><b>verifyProductSearchFromCartPage</b><br>Test class: tests.CartTest<br>Test method: TC-CART-023</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method isProductSearchDisplayed() is undefined for the type CartPage
+	The method searchProduct(String) is undefined for the type CartPage
+
+	at tests.CartTest.verifyProductSearchFromCartPage(CartTest.java:88)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1810113242", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1810113242'><pre>java.lang.Error: Unresolved compilation problems: 
+	The method addProductAndOpenCart() is undefined for the type CartPage
+	The method isProductSearchDisplayed() is undefined for the type CartPage
+	The method searchProduct(String) is undefined for the type CartPage
+
+	at tests.CartTest.verifyProductSearchFromCartPage(CartTest.java:88)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.CartTest@10aa41f2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.ExamplesOfBugsTest.verifySearchButtonBugDisplayed()'><b>verifySearchButtonBugDisplayed</b><br>Test class: tests.ExamplesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ExamplesOfBugsTest@1ce24091</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyAddToCartButtonsDisplayed()'><b>verifyAddToCartButtonsDisplayed</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.ExamplesOfBugsTest.verifyBugExampleHeadingsDisplayed()'><b>verifyBugExampleHeadingsDisplayed</b><br>Test class: tests.ExamplesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ExamplesOfBugsTest@1ce24091</td></tr>
+<tr>
+<td title='tests.ExamplesOfBugsTest.verifySocialShareBugCanBeOpened()'><b>verifySocialShareBugCanBeOpened</b><br>Test class: tests.ExamplesOfBugsTest</td>
+<td></td>
+<td>1</td>
+<td>tests.ExamplesOfBugsTest@1ce24091</td></tr>
+<tr>
+<td title='tests.CommonFeaturesTest.verifyPrivacyPolicyNavigation()'><b>verifyPrivacyPolicyNavigation</b><br>Test class: tests.CommonFeaturesTest</td>
+<td></td>
+<td>3</td>
+<td>tests.CommonFeaturesTest@37271612</td></tr>
+<tr>
+<td title='tests.ExamplesOfBugsTest.verifySocialShareBugIsClickable()'><b>verifySocialShareBugIsClickable</b><br>Test class: tests.ExamplesOfBugsTest</td>
+<td></td>
+<td>3</td>
+<td>tests.ExamplesOfBugsTest@1ce24091</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyView50TextPresent()'><b>verifyView50TextPresent</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyViewLabelDisplayed()'><b>verifyViewLabelDisplayed</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyPerformanceBugDisplayed()'><b>verifyPerformanceBugDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyAllBugTypesDisplayed()'><b>verifyAllBugTypesDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyFindBugsPageLoaded()'><b>verifyFindBugsPageLoaded</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyFindBugsHeadingDisplayed()'><b>verifyFindBugsHeadingDisplayed</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyView10TextPresent()'><b>verifyView10TextPresent</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyCrashBugDisplayed()'><b>verifyCrashBugDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyTypesPageUrl()'><b>verifyTypesPageUrl</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyFindBugsPageTitle()'><b>verifyFindBugsPageTitle</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyFunctionalBugDisplayed()'><b>verifyFunctionalBugDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifySelectOptionsButtonsDisplayed()'><b>verifySelectOptionsButtonsDisplayed</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.PageFunctionalTest.verifyExamplesOfBugsPage()'><b>verifyExamplesOfBugsPage</b><br>Test class: tests.PageFunctionalTest</td>
+<td></td>
+<td>3</td>
+<td>tests.PageFunctionalTest@e4487af</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyVisualBugDisplayed()'><b>verifyVisualBugDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyResultInformationContainsShowing()'><b>verifyResultInformationContainsShowing</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.CommonFeaturesTest.verifyPrivacyPolicyDisplayed()'><b>verifyPrivacyPolicyDisplayed</b><br>Test class: tests.CommonFeaturesTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CommonFeaturesTest@37271612</td></tr>
+<tr>
+<td title='tests.CommonFeaturesTest.verifyLogoDisplayed()'><b>verifyLogoDisplayed</b><br>Test class: tests.CommonFeaturesTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CommonFeaturesTest@37271612</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyCrashDescriptionDisplayed()'><b>verifyCrashDescriptionDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyAllDescriptionsDisplayed()'><b>verifyAllDescriptionsDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.ExamplesOfBugsTest.verifyPageHeadingDisplayed()'><b>verifyPageHeadingDisplayed</b><br>Test class: tests.ExamplesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ExamplesOfBugsTest@1ce24091</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyFirstProductCanBeAddedToCart()'><b>verifyFirstProductCanBeAddedToCart</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyFirstProductNameDisplayed()'><b>verifyFirstProductNameDisplayed</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyTypesPageTitle()'><b>verifyTypesPageTitle</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.CommonFeaturesTest.verifyTermsLinkNavigation()'><b>verifyTermsLinkNavigation</b><br>Test class: tests.CommonFeaturesTest</td>
+<td></td>
+<td>3</td>
+<td>tests.CommonFeaturesTest@37271612</td></tr>
+<tr>
+<td title='tests.ExamplesOfBugsTest.verifyExamplesPageTitle()'><b>verifyExamplesPageTitle</b><br>Test class: tests.ExamplesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ExamplesOfBugsTest@1ce24091</td></tr>
+<tr>
+<td title='tests.ExamplesOfBugsTest.verifyVideoPlayerBugDisplayed()'><b>verifyVideoPlayerBugDisplayed</b><br>Test class: tests.ExamplesOfBugsTest</td>
+<td></td>
+<td>3</td>
+<td>tests.ExamplesOfBugsTest@1ce24091</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyTypesPageLoaded()'><b>verifyTypesPageLoaded</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyVisualDescriptionDisplayed()'><b>verifyVisualDescriptionDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyPerformanceDescriptionDisplayed()'><b>verifyPerformanceDescriptionDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>3</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.PageFunctionalTest.verifyFindBugsPage()'><b>verifyFindBugsPage</b><br>Test class: tests.PageFunctionalTest</td>
+<td></td>
+<td>4</td>
+<td>tests.PageFunctionalTest@e4487af</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyProductPricesDisplayed()'><b>verifyProductPricesDisplayed</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>1</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyContentBugDisplayed()'><b>verifyContentBugDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyContentDescriptionDisplayed()'><b>verifyContentDescriptionDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyResultInformationDisplayed()'><b>verifyResultInformationDisplayed</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.CommonFeaturesTest.verifyLogoRedirectsToHomePage()'><b>verifyLogoRedirectsToHomePage</b><br>Test class: tests.CommonFeaturesTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CommonFeaturesTest@37271612</td></tr>
+<tr>
+<td title='tests.ExamplesOfBugsTest.verifySocialShareBugDisplayed()'><b>verifySocialShareBugDisplayed</b><br>Test class: tests.ExamplesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ExamplesOfBugsTest@1ce24091</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyProductsDisplayed()'><b>verifyProductsDisplayed</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>1</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyPageDescriptionDisplayed()'><b>verifyPageDescriptionDisplayed</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.PageFunctionalTest.verifyTypesOfBugsPage()'><b>verifyTypesOfBugsPage</b><br>Test class: tests.PageFunctionalTest</td>
+<td></td>
+<td>3</td>
+<td>tests.PageFunctionalTest@e4487af</td></tr>
+<tr>
+<td title='tests.CommonFeaturesTest.verifyCommonNavigation()'><b>verifyCommonNavigation</b><br>Test class: tests.CommonFeaturesTest</td>
+<td></td>
+<td>7</td>
+<td>tests.CommonFeaturesTest@37271612</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyTypesPageHeadingDisplayed()'><b>verifyTypesPageHeadingDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyFindBugsPageUrl()'><b>verifyFindBugsPageUrl</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyAllViewValuesPresent()'><b>verifyAllViewValuesPresent</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.TypesOfBugsTest.verifyFunctionalDescriptionDisplayed()'><b>verifyFunctionalDescriptionDisplayed</b><br>Test class: tests.TypesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TypesOfBugsTest@3af9c5b7</td></tr>
+<tr>
+<td title='tests.FindBugsTest.verifyView25TextPresent()'><b>verifyView25TextPresent</b><br>Test class: tests.FindBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FindBugsTest@6aaceffd</td></tr>
+<tr>
+<td title='tests.ExamplesOfBugsTest.verifyExamplesPageLoaded()'><b>verifyExamplesPageLoaded</b><br>Test class: tests.ExamplesOfBugsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ExamplesOfBugsTest@1ce24091</td></tr>
+<tr>
+<td title='tests.CommonFeaturesTest.verifyTermsLinkDisplayed()'><b>verifyTermsLinkDisplayed</b><br>Test class: tests.CommonFeaturesTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CommonFeaturesTest@37271612</td></tr>
+</table><p>
+</body>
+</html>
