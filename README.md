@@ -51,13 +51,13 @@ Application Launch → Navigation → Examples of Bugs → Types of Bugs → Fin
 
 ## Project Deliverables
 
-* Feature List
-* Test Plan
-* Manual Test Cases
-* RTM (Requirement Traceability Matrix)
-* Bug Report
-* Test Execution Report
-* Test Summary Report
+* [Feature List](https://docs.google.com/document/d/1uoz1knEFUq73RtnMyzmgWrAu4YMFJ_Ls8E0ckB--Sjk/edit?tab=t.0)
+* [Test Plan](https://docs.google.com/document/d/1k4n-tpS6ngxk3VK3zxlpMb-nfsOajox-/edit)
+* [Manual Test Cases](https://docs.google.com/spreadsheets/d/19IOi2lvGXaYmhFwgmHQLZP5kRqJPnoiUNg36qlQe8As/edit?gid=1017200771#gid=1017200771)
+* [RTM (Requirement Traceability Matrix)](https://docs.google.com/spreadsheets/d/19IOi2lvGXaYmhFwgmHQLZP5kRqJPnoiUNg36qlQe8As/edit?gid=1017200771#gid=1017200771)
+* [Bug Report](https://docs.google.com/spreadsheets/d/19IOi2lvGXaYmhFwgmHQLZP5kRqJPnoiUNg36qlQe8As/edit?gid=1017200771#gid=1017200771)
+* [Test Execution Report](https://docs.google.com/spreadsheets/d/19IOi2lvGXaYmhFwgmHQLZP5kRqJPnoiUNg36qlQe8As/edit?gid=1017200771#gid=1017200771)
+* [Test Summary Report](https://docs.google.com/document/d/10S08lG437F7AUfwGNJ6qjgi0_bGs3vjoKj2ywDKmo4U/edit?tab=t.0)
 
 ## Key Highlights
 * Most core application features are functioning correctly, with 91.30% of test cases passing.
