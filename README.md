@@ -40,4 +40,32 @@ The automation framework is developed using Selenium WebDriver, Java, TestNG, Ma
 
 ## End-to-End Workflow
 Application Launch → Navigation → Examples of Bugs → Types of Bugs → Find Bugs → Product Selection → Cart → Bug Reporting → Validation.
+## Test Summary
+Item                      Details
+
+Total Test Cases Executed  253
+Test Cases Passed          231
+Test Cases Failed          22
+Test Cases Blocked/Skipped 0
+Overall Pass Percentage    91.30% 
+
+## Project Deliverables
+
+* Feature List
+* Test Plan
+* Manual Test Cases
+* RTM (Requirement Traceability Matrix)
+* Bug Report
+* Test Execution Report
+* Test Summary Report
+
+## Key Highlights
+* Most core application features are functioning correctly, with 91.30% of test cases passing.
+* Common Features, Examples of Bugs, Types of Bugs, Cart, Checkout, and Shipping performed successfully.
+* The Find Bugs ,Login and Cart module works overall but contains some functional defects.
+* The Report Bugs module was not fully executed and requires additional testing.
+* Critical defects were identified in the Payment module, particularly missing payment options and allowing order submission without completing payment.
+* The end-to-end customer workflow is functional up to payment, where the critical payment defects affect successful completion.
+* Overall Result: Pass with defects, with the Payment module requiring the highest priority for fixes and regression testing.
+
 
