@@ -41,13 +41,13 @@ The automation framework is developed using Selenium WebDriver, Java, TestNG, Ma
 ## End-to-End Workflow
 Application Launch → Navigation → Examples of Bugs → Types of Bugs → Find Bugs → Product Selection → Cart → Bug Reporting → Validation.
 ## Test Summary
-Item                      Details
-
-Total Test Cases Executed  253
-Test Cases Passed          231
-Test Cases Failed          22
-Test Cases Blocked/Skipped 0
-Overall Pass Percentage    91.30% 
+| Item              |   Details      |
+|-------------------|----------------|
+| Total Test Cases Executed | 253    |
+| Test Cases Passed         | 231    |
+| Test Cases Failed         | 22        |
+| Test Cases Blocked/Skipped | 0         |
+| Overall Pass Percentage  |  91.30%    |
 
 ## Project Deliverables
 
